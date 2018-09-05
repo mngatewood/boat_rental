@@ -12,9 +12,9 @@ class RentalTest < Minitest::Test
   end
 
   def test_it_has_a_renter
-    renter = Renter.new("Patrick Star", "4242424242424242")
     boat = Boat.new(:kayak, 20)
-    rental = Rental.new(renter, boat)
+    renter = Renter.new("Patrick Star", "4242424242424242")
+    rental = Rental.new(boat, renter)
     assert_equal renter, rental.renter
   end
     

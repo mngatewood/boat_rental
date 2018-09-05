@@ -1,10 +1,10 @@
 class Rental
 
-  attr_reader :renter, :boat
+  attr_reader :boat, :renter
 
-  def initialize(renter, boat)
-    @renter = renter
+  def initialize(boat, renter)
     @boat = boat
+    @renter = renter
   end
 
 end
